@@ -7,6 +7,14 @@ import { motion } from 'framer-motion';
 
 const MotionCard = motion(Card);
 
+interface FeatureCardProps {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+  color: string;
+  index: number;
+}
+
 export default function Home() {
   return (
     <div className="bg-gradient-to-b from-blue-100 to-purple-100 dark:from-gray-900 dark:to-blue-900 min-h-screen">
@@ -77,7 +85,7 @@ const features = [
   },
 ];
 
-function FeatureCard({ title, description, icon, color, index }) {
+function FeatureCard({ title, description, icon, color, index }: FeatureCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
