@@ -66,9 +66,9 @@ const Navbar = () => {
               </Button>
             </SignedOut>
             <SignedIn>
-              <Notifications userId={user?.id} />
-              <UserButton afterSignOutUrl="/" />
-            </SignedIn>
+            <Notifications userId={user?.id || ''} />
+                  <UserButton afterSignOutUrl="/" />
+                </SignedIn>
             <Button
               variant="ghost"
               size="icon"
@@ -101,9 +101,9 @@ const Navbar = () => {
                     </Button>
                   </SignedOut>
                   <SignedIn>
-                    <Notifications userId={user?.id} />
-                    <UserButton afterSignOutUrl="/" />
-                  </SignedIn>
+                  <Notifications userId={user?.id || ''} />
+                  <UserButton afterSignOutUrl="/" />
+                </SignedIn>
                   <Button
                     variant="outline"
                     size="icon"
