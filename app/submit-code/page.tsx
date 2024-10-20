@@ -35,7 +35,6 @@
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submittedSnippetId, setSubmittedSnippetId] = useState<string | null>(null);
     const [charCount, setCharCount] = useState(0);
-    const [isCopied, setIsCopied] = useState(false);
     const [isRefinedCopied, setIsRefinedCopied] = useState(false);
 
     const createCodeSnippet = useMutation(api.codeSnippets.createCodeSnippet);

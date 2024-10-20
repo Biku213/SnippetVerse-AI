@@ -6,7 +6,7 @@ import './globals.css'
 import { ThemeProvider } from './components/ThemeProvider'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Toaster } from 'react-hot-toast';
+
 
 
 const inter = Inter({ subsets: ['latin'] })

@@ -6,7 +6,7 @@ import { api } from '@/convex/_generated/api';
 import { useQuery, useMutation } from 'convex/react';
 import Link from 'next/link';
 import { Button } from '../components/ui/button';
-import { TrashIcon, PlusIcon, LoaderCircle, Loader, Moon, Sun, Code, FileText } from 'lucide-react';
+import { TrashIcon, PlusIcon, LoaderCircle, Loader, Moon, Sun, Code,} from 'lucide-react';
 import { Toaster, toast } from 'react-hot-toast';
 import { Id } from '@/convex/_generated/dataModel';
 import { motion, AnimatePresence } from 'framer-motion';
