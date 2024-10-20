@@ -190,19 +190,19 @@ function CodeSnippetList({ userId }: { userId: string }) {
     );
   };
 
-  const updateSnippetAnalysis = async (snippetId: Id<"codeSnippets">, analysis: string, refinedCode: string) => {
-    try {
-      await updateCodeSnippet({
-        id: snippetId,
-        analysis: analysis,
-        refinedCode: refinedCode
-      });
-      toast.success('Snippet analysis updated successfully');
-    } catch (error) {
-      console.error('Error updating snippet analysis:', error);
-      toast.error('Failed to update snippet analysis');
-    }
-  };
+  // const updateSnippetAnalysis = async (snippetId: Id<"codeSnippets">, analysis: string, refinedCode: string) => {
+  //   try {
+  //     await updateCodeSnippet({
+  //       id: snippetId,
+  //       analysis: analysis,
+  //       refinedCode: refinedCode
+  //     });
+  //     toast.success('Snippet analysis updated successfully');
+  //   } catch (error) {
+  //     console.error('Error updating snippet analysis:', error);
+  //     toast.error('Failed to update snippet analysis');
+  //   }
+  // };
 
   const sortedSnippets = [...codeSnippets].sort((a, b) => {
     if (sortBy === 'date') {
