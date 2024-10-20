@@ -32,8 +32,8 @@ SnippertVerse AI stands out as your personal code improvement assistant. By comb
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/code-sage-ai.git
-   cd code-sage-ai
+   git clone https://github.com/Biku213/SnippetVerse-AI.git
+   cd SnippetVerse-AI
    ```
 
 2. Install dependencies:
