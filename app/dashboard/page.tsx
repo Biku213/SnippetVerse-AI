@@ -113,7 +113,7 @@ function CodeSnippetList({ userId }: { userId: string }) {
     userId: userId || ''
   });
   const deleteCodeSnippet = useMutation(api.codeSnippets.deleteCodeSnippet);
-  const updateCodeSnippet = useMutation(api.codeSnippets.updateCodeSnippet);
+  // const updateCodeSnippet = useMutation(api.codeSnippets.updateCodeSnippet);
   const [sortBy, setSortBy] = useState('date');
   const [filterLanguage] = useState('');
 
