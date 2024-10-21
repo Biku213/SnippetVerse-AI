@@ -25,8 +25,7 @@ SnippertVerse AI stands out as your personal code improvement assistant. By comb
 
 ## Video Demo
 
-[SnippetVerse AI Video Demo] https://github.com/user-attachments/assets/c8478694-cb86-4b17-bf7c-d8e5e267def6
-
+[[SnippetVerse AI Video Demo](https://github.com/user-attachments/assets/c8478694-cb86-4b17-bf7c-d8e5e267def6)]
 ## Installation and Setup
 
 1. Clone the repository:
