@@ -13,9 +13,9 @@ SnippetVerse AI is an innovative web application designed to empower developers 
 7. **Responsive Design**: Access the platform on any device with a consistent, modern UI.
 8. **Notification System**: Stay informed about important events and snippet updates.
 
-## Why Choose SnippertVerse AI?
+## Why Choose SnippetVerse AI?
 
-SnippertVerse AI stands out as your personal code improvement assistant. By combining the power of AI with a user-friendly interface, it offers:
+SnippetVerse AI stands out as your personal code improvement assistant. By combining the power of AI with a user-friendly interface, it offers:
 
 - **Instant Feedback**: Get immediate insights on your code quality and potential improvements.
 - **Learning Opportunities**: Understand best practices and industry standards through AI suggestions.
