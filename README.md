@@ -97,3 +97,4 @@ convex dev
 - State Management: React hooks and Convex
 - Notifications: react-hot-toast
 ````
+## Troubleshooting: If you encounter errors when refining code on the deployed web app, try running the project locally on your device to isolate the issue.
