@@ -24,7 +24,7 @@ SnippertVerse AI stands out as your personal code improvement assistant. By comb
 - **Continuous Improvement**: Track your progress and see how your coding skills evolve over time.
 
 ## Video Demo
-
+Watch this video demo for a walkthrough of SnippetVerse-AI
 [[SnippetVerse AI Video Demo](https://github.com/user-attachments/assets/c8478694-cb86-4b17-bf7c-d8e5e267def6)]
 ## Installation and Setup
 
