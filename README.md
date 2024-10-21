@@ -1,6 +1,6 @@
-# SnippertVerse AI: AI-Assisted Code Review Platform
+# SnippetVerse AI: AI-Assisted Code Review Platform
 
-SnippertVerse AI is an innovative web application designed to empower developers with AI-powered code reviews and efficient code snippet management. Built on a robust tech stack including Next.js, Convex, and Clerk, this platform offers a seamless experience for improving code quality and sharing knowledge.
+SnippetVerse AI is an innovative web application designed to empower developers with AI-powered code reviews and efficient code snippet management. Built on a robust tech stack including Next.js, Convex, and Clerk, this platform offers a seamless experience for improving code quality and sharing knowledge.
 
 ## Key Features
 
