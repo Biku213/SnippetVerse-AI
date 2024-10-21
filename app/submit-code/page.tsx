@@ -123,7 +123,6 @@
         setIsRefining(false);
       }
     };
-
     const handleAcceptRefinedCode = () => {
       setCode(refinedCode);
       setRefinedCode('');
