@@ -94,30 +94,35 @@
     const handleRefineCode = async () => {
       setIsRefining(true);
       setError('');
-
+  
       try {
         const response = await fetch('/api/refine-code', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ code, language, analysis }),
         });
-
+  
         if (!response.ok) {
           const errorData = await response.json();
-          throw new Error(errorData.error || 'Failed to refine code');
+          throw new Error(errorData.error || errorData.details || 'Failed to refine code');
         }
-
+  
         const data = await response.json();
+        
+        if (!data.refinedCode || typeof data.refinedCode !== 'string') {
+          throw new Error('Invalid refined code received');
+        }
+        
         setRefinedCode(data.refinedCode);
         toast.success('Code refined successfully');
       } catch (error) {
         console.error('Error refining code:', error);
-        toast.error('Failed to refine code');
+        toast.error(error instanceof Error ? error.message : 'Failed to refine code');
         setError(error instanceof Error ? error.message : 'An unknown error occurred');
       } finally {
         setIsRefining(false);
-      }
-    };
+      }
+    };
 
     const handleAcceptRefinedCode = () => {
       setCode(refinedCode);

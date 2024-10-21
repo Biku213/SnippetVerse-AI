@@ -41,9 +41,20 @@ Please provide the refined code or the original code if no refinement is needed.
     const refinementResult = await model.generateContent(refinementPrompt);
     const refinedCode = refinementResult.response.text();
 
+    console.log('Analysis response:', analysis);
+    console.log('Refinement response:', refinedCode);
+
+    // Check if the refined code is valid
+    if (!refinedCode.trim()) {
+      throw new Error('Refined code is empty');
+    }
+
     return NextResponse.json({ analysis, refinedCode });
   } catch (error) {
     console.error('Error refining code:', error);
-    return NextResponse.json({ error: 'Failed to refine code' }, { status: 500 });
-  }
+    return NextResponse.json({ 
+      error: 'Failed to refine code', 
+      details: error instanceof Error ? error.message : 'Unknown error'
+    }, { status: 500 });
+  }
 }
